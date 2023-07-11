@@ -2,6 +2,10 @@
 :root{
     --bs-azul: #1a2a5b;
     --bs-celeste: #0081c7;
+    --bs-amarillo: #f5d657;
+    --bs-purple: #7938C4;
+    --bs-orange: #ed8400;
+    --bs-rojo: #ed1c24;
 }
 
 /* Background Styles */
@@ -16,11 +20,32 @@
     border-bottom-left-radius: 12%;
     border-bottom-right-radius: 12%;
 }
+.bg-orange{
+    background: var(--bs-orange);
+}
+
+.bg-rojo{
+    background: var(--bs-rojo);
+}
 
 /* gradiantes */
-.bg-oreange-gradient {
+.bg-red-gradient {
     background: rgb(237, 28, 36);
     background: linear-gradient(90deg, rgba(237, 28, 36, 1) 0%, rgba(241, 90, 36, 1) 50%, rgba(237, 28, 36, 1) 100%);
+}
+.bg-red-gradient-180 {
+    background: rgb(237, 28, 36);
+    background: linear-gradient(180deg, rgba(237, 28, 36, 1) 0%, rgba(241, 90, 36, 1) 50%, rgba(237, 28, 36, 1) 100%);
+}
+
+
+.bg-orange-gradient {
+    background: rgb(237,132,0);
+    background: linear-gradient(90deg, rgba(237,132,0,1) 0%, rgba(255,188,0,1) 52%, rgba(237,132,0,1) 100%);
+}
+.bg-orange-gradient-180 {
+    background: rgb(237,132,0);
+    background: linear-gradient(180deg, rgba(237,132,0,1) 0%, rgba(255,188,0,1) 52%, rgba(237,132,0,1) 100%);
 }
 
 .bg-purpura-gradient {
@@ -70,9 +95,18 @@
     filter: drop-shadow(0px 6px 3px #a1a1a1)
 }
 
+.drop-shadow-2{
+    filter: drop-shadow(0px 3px 7px #000);
+}
 
 
 /* Font Sizes */
+.fs-1r{
+    font-size: 1.2vh;
+}
+.fs-2r{
+    font-size: 1.5vh;
+}
 .fs-12{
     font-size: 12px;
 }
@@ -85,10 +119,18 @@
 .fs-18{
     font-size: 18px;
 }
+.fs-20{
+    font-size: 20px;
+}
+.fs-22{
+    font-size: 22px;
+}
 
 
 /*Text Colors*/
-
+.text-amarillo{
+    color:var(--bs-amarillo);
+}
 .text-azul{
     color: var(--bs-azul);
 }
@@ -96,8 +138,23 @@
 .text-celeste{
     color: var(--bs-celeste);
 }
+.text-purple{
+    color: var(--bs-purple);
+}
+.text-orange{
+    color: var(--bs-orange);
+}
+.text-rojo{
+    color: var(--bs-rojo);
+}
 
 /* Varios Styles */
+.suspendido div.block{
+    filter:opacity(40%) grayscale(100%) ;
+    pointer-events: none;
+}
+
+
 .none-style {
     text-decoration: none;
     list-style: none;
@@ -111,6 +168,11 @@
 
 .main_div {
     padding: 30px;
+}
+
+
+.btn-active{
+    color: var(--bs-amarillo);
 }
 
 /*input */
