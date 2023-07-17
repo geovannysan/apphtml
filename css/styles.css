@@ -6,6 +6,7 @@
     --bs-purple: #7938C4;
     --bs-orange: #ed8400;
     --bs-rojo: #ed1c24;
+    --bs-verde:#40bc42;
 }
 
 /* Background Styles */
@@ -51,6 +52,15 @@
 .bg-purpura-gradient {
     background: rgb(121, 56, 196);
     background: linear-gradient(90deg, rgba(121, 56, 196, 1) 0%, rgba(165, 89, 251, 1) 50%, rgba(121, 56, 196, 1) 100%);
+}
+
+.bg-green-gradient-180{
+    background: rgb(64,188,66);
+    background: linear-gradient(180deg, rgba(64,188,66,1) 0%, rgba(98,219,32,1) 52%, rgba(64,188,66,1) 100%);
+}
+.bg-green-gradient{
+    background: rgb(64,188,66);
+    background: linear-gradient(90deg, rgba(64,188,66,1) 0%, rgba(98,219,32,1) 52%, rgba(64,188,66,1) 100%);
 }
 
 .bg-blue-gradient {
@@ -135,6 +145,9 @@
     color: var(--bs-azul);
 }
 
+.text-verde{
+    color: var(--bs-verde);
+}
 .text-celeste{
     color: var(--bs-celeste);
 }
@@ -153,7 +166,13 @@
     filter:opacity(40%) grayscale(100%) ;
     pointer-events: none;
 }
+.suspendido div.estado .color{
+    color: var(--bs-rojo);
+}
 
+.estado .color{
+    color: var(--bs-verde);
+}
 
 .none-style {
     text-decoration: none;
